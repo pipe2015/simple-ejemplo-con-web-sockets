@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My aplicacion con webSockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <p>hola mundo</p>
+    <div>
+        <p>user: <span id="user_value"></span></p>
+        <br>
+        <form action="">
+            <div class="space">
+                <label for="user">escriba el nombre del usuario</label>
+                <input type="text" id="user" class="user">
+            </div>
+            <div class="space">
+                <label for="mesagge">escriba el mensage</label>
+                <input type="text" id="message" class="message">
+            </div>
+            <input type="button" id="send_message" value="Eviar mensaje">
+            <input type="button" id="des_user" value="Desconectar usuario">
+        </form>
+    </div>
+    <!-- load main js -->
+    <script src="main.js"></script>
+</body>
+</html>
